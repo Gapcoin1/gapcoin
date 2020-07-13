@@ -5,7 +5,7 @@ http://www.gapcoin.org
 
 Copyright (c) 2009-2014 Bitcoin Core Developers
 <br>
-Copyright (c) 2014-2015 Gapcoin Core Developers
+Copyright (c) 2014-2020 The Satoshi Gapcoin Clan Core Developers
 
 What is Gapcoin?
 ----------------
@@ -16,8 +16,7 @@ with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Gapcoin Core is the name of open source
 software which enables the use of this currency.
 
-For more information, as well as an immediately useable, binary version of
-the Gapcoin Core software, see http://www.gapcoin.org/en/download.
+For more information of the Gapcoin Core software, see https://www.gapcoin.org
 
 License
 -------
