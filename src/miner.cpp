@@ -371,7 +371,7 @@ double dTestsPerSec = 0.0;
 double d15GapsPerHour = 0.0;
 uint64_t nMiningSieveSize = 1533554432;
 uint64_t nMiningPrimes = 40900000;
-uint16_t nMiningShift = 100;
+uint16_t nMiningShift = 64;
 static std::vector<double> dThreadHashesPerSec;
 static std::vector<double> dThreadTestsPerSec;
 
