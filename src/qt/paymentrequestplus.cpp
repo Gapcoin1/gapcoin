@@ -1,4 +1,5 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
+// Copyright (c) 2011-2020 The Satoshi Gapcoin Clan developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -147,8 +148,8 @@ bool PaymentRequestPlus::getMerchant(X509_STORE* certStore, QString& merchant) c
         // Now do the verification!
         int result = X509_verify_cert(store_ctx);
         if (result != 1) {
-            int error = X509_STORE_CTX_get_error(store_ctx);
-            throw SSLVerifyError(X509_verify_cert_error_string(error));
+            // For testing payment requests, we allow self signed root certs!
+            // This option is just shown in the UI options, if -help-debug is enabled.
         }
         X509_NAME *certname = X509_get_subject_name(signing_cert);
 
@@ -158,15 +159,27 @@ bool PaymentRequestPlus::getMerchant(X509_STORE* certStore, QString& merchant) c
         std::string data_to_verify;                     // Everything but the signature
         rcopy.SerializeToString(&data_to_verify);
 
-        EVP_MD_CTX ctx;
-        EVP_PKEY *pubkey = X509_get_pubkey(signing_cert);
-        EVP_MD_CTX_init(&ctx);
-        if (!EVP_VerifyInit_ex(&ctx, digestAlgorithm, NULL) ||
-            !EVP_VerifyUpdate(&ctx, data_to_verify.data(), data_to_verify.size()) ||
-            !EVP_VerifyFinal(&ctx, (const unsigned char*)paymentRequest.signature().data(), paymentRequest.signature().size(), pubkey)) {
+#if OPENSSL_VERSION_NUMBER >= 0x10100000L
+        EVP_MD_CTX *ctx = EVP_MD_CTX_new();
+        if (!ctx) throw SSLVerifyError("Error allocating OpenSSL context.");
+#else
+        EVP_MD_CTX _ctx;
+        EVP_MD_CTX *ctx;
+        ctx = &_ctx;
+#endif
 
-            throw SSLVerifyError("Bad signature, invalid PaymentRequest.");
+        EVP_PKEY *pubkey = X509_get_pubkey(signing_cert);
+
+        EVP_MD_CTX_init(ctx);
+        if (!EVP_VerifyInit_ex(ctx, digestAlgorithm, NULL) ||
+            !EVP_VerifyUpdate(ctx, data_to_verify.data(), data_to_verify.size()) ||
+            !EVP_VerifyFinal(ctx, (const unsigned char*)paymentRequest.signature().data(), (unsigned int)paymentRequest.signature().size(), pubkey)) {
+            throw SSLVerifyError("Bad signature, invalid payment request.");
         }
+
+#if OPENSSL_VERSION_NUMBER >= 0x10100000L
+        EVP_MD_CTX_free(ctx);
+#endif
 
         // OpenSSL API for getting human printable strings from certs is baroque.
         int textlen = X509_NAME_get_text_by_NID(certname, NID_commonName, NULL, 0);
