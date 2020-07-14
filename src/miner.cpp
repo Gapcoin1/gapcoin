@@ -454,7 +454,7 @@ void static GapcoinMiner(CWallet *pwallet, uint64_t nThread, uint64_t numThreads
         unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
         CBlockIndex* pindexPrev = chainActive.Tip();
 
-        auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
+        unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
         if (!pblocktemplate.get())
             return;
         CBlock *pblock = &pblocktemplate->block;
