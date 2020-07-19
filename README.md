@@ -49,7 +49,7 @@ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
 Use Synaptic to manually install the latest berkeley database -dev and ++dev
 
 
-git clone https://gitlab.com/Gapcoin/gapcoin.git
+**git clone https://gitlab.com/Gapcoin/gapcoin.git**
 
 **cd gapcoin**
 
