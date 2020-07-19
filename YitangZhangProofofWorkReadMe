@@ -1,0 +1,63 @@
+Clone Gapcoin first than change miner.cpp
+
+Open Computer file system find gapcoin cloned folder
+
+Go into SRC
+
+Find Miner.cpp
+
+Find
+
+#ifdef ENABLE_WALLET
+//////////////////////////////////////////////////////////////////////////////
+//
+// Internal miner
+//
+double dHashesPerSec = 0.0;
+double dTestsPerSec = 0.0;
+double d15GapsPerHour = 0.0;
+uint64_t nMiningSieveSize = 1553554432;
+uint64_t nMiningPrimes = 50505003;
+uint16_t nMiningShift = 64;
+
+ADD the 15 to the SieveSize
+ADD the 50 or 40 to the MiningPrimes
+
+Once changed this is now your custom compiled Gapcoin wallet with a custom miner.
+
+To Test out Custom miner for hardware/Memory use
+
+Setgenerate true (number of cores/threads#) (SieveSize#) (SievePrimes#) (shift#)
+
+Example
+Setgenerate true 6 1553554432 50505003 64
+
+Disable HyperThreading (Anything pre-Ryzen 3000) in BIOS and try to lower voltages to stable for Yitang Zhang Algo to free up memory as multi-threading is useless.
+
+SievePrimes needs to equal or greater than 40-50 (Million)
+
+Test smaller numbers first and Sieve sizes and work your way up using Setgenerate false to stop the miner. Once you Zero in your custom shift type it into SRC miner.cpp and BEFORE compiling Gapcoin as normal.
+
+Just RENAME cloned gapcoin folder to gapcoin32 gapcoin55 ect.....to clone again to start over if you easily want to move to different shifts.
+
+Every Hardware and Memory will be different but every shift can attain 40-50,000,000 SievePrimes with 16GB memory 6-8 Cores and under. 6 Cores use 50 Million, 8 Cores use 40 million.
+
+You will need to double your Memory for Hyperthreading enabled or
+
+AMD Ryzen 3000 allows you to multi-task WITHOUT disabling multi-threading.
+
+Use Setgenerate true 8. For 8 core CPU. setgenerate true 6 for 6 core cpu ect.....
+
+
+
+Intel and AMD always changing, but the 1.5 Billion SieveSize and 40-50 Million MiningPrimes is solid no matter what else changes. For more cores double the Memory ect......12 Cores with 32 GB memory and can do 50 Million MiningPrimes 16 Cores with 32 GB Memory can do 40 Million ect....with 1.5 Billion SieveSize staying the same.
+
+MiningPrimes= Primary Memory Usage Controller
+SieveSize= Secondary Memory Usage Controller
+Shift= CPU hash rate controller
+
+This has been tested and found true however feel free to experiment. Memory does not allow a 2 Billion SieveSize (Currently).
+
+Higher Shifts will slow CPU hash rate but the hash rate is not a guaranteed factor of winning blocks.
+
+You can freely mine shift 64 without any lost blocks. There is a large loss of hash rate at Shift 69 and other various places along the line.
