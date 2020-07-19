@@ -116,6 +116,20 @@ Those are the most common useful commands.  Type help for the full libboost
 
 
 
+To Mine using the Gapcoind local daemon from Linux Command Line Terminal
+
+After starting ./gapcoind
+
+New Terminal
+
+cd gapcoin/src 
+
+Type
+./gapcoin-cli setgenerate true 
+
+Type ./gapcoin-cli and all the commands from the QT debug are valid here.  Use ./gapcoin-cli help for full libboost
+
+
 
 
 
