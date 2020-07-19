@@ -1,7 +1,7 @@
 Gapcoin Core integration/staging tree
 =====================================
 
-http://www.gapcoin.org
+https://www.gapcoin.org
 
 Copyright (c) 2009-2014 Bitcoin Core Developers
 <br>
