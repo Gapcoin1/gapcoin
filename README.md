@@ -51,17 +51,17 @@ Use Synaptic to manually install the latest berkeley database -dev and ++dev
 
 git clone https://gitlab.com/Gapcoin/gapcoin.git
 
-**cd gapcoin
+**cd gapcoin**
 
-git submodule init
+**git submodule init**
 
-git submodule update --remote --merge
+**git submodule update --remote --merge**
 
-./autogen.sh
+**./autogen.sh**
 
-./configure --with-incompatible-bdb --without-miniupnpc
+**./configure --with-incompatible-bdb --without-miniupnpc**
 
-make**
+**make**
 
 
 
