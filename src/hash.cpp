@@ -1,5 +1,6 @@
 #include "hash.h"
 
+
 inline uint32_t ROTL32 ( uint32_t x, int8_t r )
 {
     return (x << r) | (x >> (32 - r));
@@ -59,11 +60,11 @@ unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char
 
 int HMAC_SHA512_Init(HMAC_SHA512_CTX *pctx, const void *pkey, size_t len)
 {
-    unsigned char key[128];
-    if (len <= 128)
+    unsigned char key[512];
+    if (len <= 512)
     {
         memcpy(key, pkey, len);
-        memset(key + len, 0, 128-len);
+        memset(key + len, 0, 512-len);
     }
     else
     {
@@ -74,15 +75,15 @@ int HMAC_SHA512_Init(HMAC_SHA512_CTX *pctx, const void *pkey, size_t len)
         memset(key + 64, 0, 64);
     }
 
-    for (int n=0; n<128; n++)
+    for (int n=0; n<512; n++)
         key[n] ^= 0x5c;
     SHA512_Init(&pctx->ctxOuter);
-    SHA512_Update(&pctx->ctxOuter, key, 128);
+    SHA512_Update(&pctx->ctxOuter, key, 512);
 
-    for (int n=0; n<128; n++)
+    for (int n=0; n<512; n++)
         key[n] ^= 0x5c ^ 0x36;
     SHA512_Init(&pctx->ctxInner);
-    return SHA512_Update(&pctx->ctxInner, key, 128);
+    return SHA512_Update(&pctx->ctxInner, key, 512);
 }
 
 int HMAC_SHA512_Update(HMAC_SHA512_CTX *pctx, const void *pdata, size_t len)
