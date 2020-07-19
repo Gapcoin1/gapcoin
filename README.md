@@ -80,5 +80,45 @@ In Linux to view .gapcoin folders with the . you need to go your home folder and
 
 
 
+**Disable CPU Hyper-Threading in the Bios.  Lower voltages to stable.  Remove memory OR remove the Bios battery to reset the bios until your changes are perfectly stable.**
+
+**2 GB R.A.M. Memory Required per 1 CPU core.**
+
+
+
+
+
+From the Gapcoin QT GUI Wallet
+
+Click **HELP**
+Click **DEBUG WINDOW**
+Click **CONSOLE**
+
+This is where you input commands for mining and other info
+
+This command uses all cores to mine
+
+**setgenerate true**
+
+This command uses specified amount of CPU cores to mine with
+
+**setgenerate true 14**
+
+This command gives mining info
+
+**getmininginfo**
+
+This command gives peer connections
+
+**getpeerinfo**
+
+Those are the most common useful commands.  Type help for the full libboost
+
+
+
+
+
+
+
 
 
