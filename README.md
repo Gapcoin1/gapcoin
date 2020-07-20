@@ -142,7 +142,9 @@ Type ./gapcoin-cli and all the commands from the QT debug are valid here.  Use .
 
 
 
+**Prime GAP's can be bought/sold here!**
 
+https://freiexchange.com/market/GAP/BTC
 
 
 
