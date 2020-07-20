@@ -36,6 +36,18 @@ https://sourceforge.net/projects/urukos/files/
 
 **From Linux Command Line Terminal 1 LINE ITEM AT A TIME**
 
+**Remove unwanted programs that waste time updating.**
+
+sudo apt remove libreoffice-common icedove orca
+
+**Update the Operating System**
+
+sudo apt update && sudo apt dist-upgrade
+
+
+**Start Gapcoin Install**
+
+
 sudo apt-get install git synaptic gdebi pkg-config
 
 sudo apt-get install build-essential libtool autotools-dev autoconf libssl-dev libgmp-dev libmpfr-dev
@@ -46,7 +58,7 @@ sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-d
 
 sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
 
-Use Synaptic to manually install the latest berkeley database -dev and ++dev
+sudo apt install db5.3-util libdb5.3++-dev libdb5.3-dev
 
 
 **git clone https://gitlab.com/Gapcoin/gapcoin.git**
