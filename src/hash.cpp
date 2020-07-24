@@ -41,11 +41,11 @@ unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char
     switch (vDataToHash.size() & 3) {
         case 3:
             k1 ^= tail[2] << 16;
-        break;
+        /* FALLTHROUGH */
 
         case 2:
             k1 ^= tail[1] << 8;
-        break;
+        /* FALLTHROUGH */
 
         case 1:
             k1 ^= tail[0];
@@ -53,7 +53,7 @@ unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char
             k1 = ROTL32(k1, 15);
             k1 *= c2;
             h1 ^= k1;
-        break; 
+        /* FALLTHROUGH */ 
     }
 
     //----------
