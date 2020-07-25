@@ -1,7 +1,7 @@
 #include "hash.h"
 
 
-inline uint64_t ROTL64 ( uint64_t x, int8_t r )
+inline uint64_t ROTL64 ( uint64_t x, int16_t r )
 {
     return (x << r) | (x >> (64 - r));
 }
@@ -34,7 +34,7 @@ unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char
 
     //----------
     // tail
-    const uint8_t * tail = (const uint8_t*)(&vDataToHash[0] + nblocks*4);
+    const uint16_t * tail = (const uint16_t*)(&vDataToHash[0] + nblocks*4);
 
     uint64_t k1 = 0;
 
