@@ -26,9 +26,9 @@ if [ -e "$(which git 2>/dev/null)" -a -d ".git" ]; then
         git diff-index --quiet HEAD -- && DESC=$RAWDESC
     fi
 
-    # otherwise generate suffix from git, i.e. string like "59887e8-dirty"
+    # otherwise generate suffix from git, i.e. string like ""
     SUFFIX=$(git rev-parse --short HEAD)
-    git diff-index --quiet HEAD -- || SUFFIX="$SUFFIX-dirty"
+    git diff-index --quiet HEAD -- || SUFFIX=""
 
     # get a string like "2012-04-10 16:27:19 +0200"
     LAST_COMMIT_DATE="$(git log -n 1 --format="%ci")"
