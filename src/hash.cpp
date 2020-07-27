@@ -1,7 +1,7 @@
 #include "hash.h"
 
 
-inline uint64_t ROTL64 ( uint64_t x, int16_t r )
+inline uint64_t ROTL64 ( uint64_t x, int8_t r )
 {
     return (x << r) | (x >> (64 - r));
 }
@@ -14,11 +14,11 @@ unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char
     const uint64_t c1 = 0x87c37b91114253d5;
     const uint64_t c2 = 0x4cf5ad432745937f;
 
-    const int nblocks = vDataToHash.size() / 16;
+    const int nblocks = vDataToHash.size() / 4;
 
     //----------
     // body
-    const uint64_t * blocks = (const uint64_t *)(&vDataToHash[0] + nblocks*16);
+    const uint64_t * blocks = (const uint64_t *)(&vDataToHash[0] + nblocks*4);
 
     for(int i = -nblocks; i; i++)
     {
@@ -35,7 +35,7 @@ unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char
 
     //----------
     // tail
-    const uint16_t * tail = (const uint16_t*)(&vDataToHash[0] + nblocks*16);
+    const uint8_t * tail = (const uint8_t*)(&vDataToHash[0] + nblocks*4);
 
     uint64_t k1 = 0;
 
