@@ -1,77 +1,63 @@
 #include "hash.h"
 
 
-inline uint64_t ROTL64 ( uint64_t x, int8_t r )
+
+inline uint32_t ROTL32 ( uint32_t x, int8_t r )
 {
-    return (x << r) | (x >> (64 - r));
+    return (x << r) | (x >> (32 - r));
 }
 
-    //----------
 unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char>& vDataToHash)
 {
-    // The following is MurmurHash3 (x86_64)
-    uint64_t h1 = nHashSeed;
-    const uint64_t c1 = 0x87c37b91114253d5;
-    const uint64_t c2 = 0x4cf5ad432745937f;
+    // The following is MurmurHash3 (x86_32), see http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp
+    uint32_t h1 = nHashSeed;
+    const uint32_t c1 = 0xcc9e2d51;
+    const uint32_t c2 = 0x1b873593;
 
     const int nblocks = vDataToHash.size() / 4;
 
     //----------
     // body
-    const uint64_t * blocks = (const uint64_t *)(&vDataToHash[0] + nblocks*4);
+    const uint32_t * blocks = (const uint32_t *)(&vDataToHash[0] + nblocks*4);
 
     for(int i = -nblocks; i; i++)
     {
-        uint64_t k1 = blocks[i];
+        uint32_t k1 = blocks[i];
 
         k1 *= c1;
-        k1 = ROTL64(k1,31);
+        k1 = ROTL32(k1,15);
         k1 *= c2;
 
         h1 ^= k1;
-        h1 = ROTL64(h1,27); 
-        h1 = h1*5+0x52dce729;
+        h1 = ROTL32(h1,13); 
+        h1 = h1*5+0xe6546b64;
     }
 
     //----------
     // tail
     const uint8_t * tail = (const uint8_t*)(&vDataToHash[0] + nblocks*4);
 
-    uint64_t k1 = 0;
+    uint32_t k1 = 0;
 
-    switch (vDataToHash.size() & 8) {
-        
-        case  8: k1 ^= ((uint64_t)tail[ 7]) << 56;
-        /* FALLTHROUGH */
-        case  7: k1 ^= ((uint64_t)tail[ 6]) << 48;
-        /* FALLTHROUGH */
-        case  6: k1 ^= ((uint64_t)tail[ 5]) << 40;
-        /* FALLTHROUGH */
-        case  5: k1 ^= ((uint64_t)tail[ 4]) << 32;
-        /* FALLTHROUGH */
-        case  4: k1 ^= ((uint64_t)tail[ 3]) << 24;
-        /* FALLTHROUGH */
-        case  3: k1 ^= ((uint64_t)tail[ 2]) << 16;
-        /* FALLTHROUGH */
-        case  2: k1 ^= ((uint64_t)tail[ 1]) << 8;
-        /* FALLTHROUGH */
-        case  1: k1 ^= ((uint64_t)tail[ 0]) << 0;
-            k1 *= c1; 
-            k1  = ROTL64(k1,31); 
-            k1 *= c2; 
-            h1 ^= k1;
-        /* FALLTHROUGH */
-
-    }
+    switch(vDataToHash.size() & 3)
+    {
+    case 3: k1 ^= tail[2] << 16;
+    /* FALLTHROUGH */
+    case 2: k1 ^= tail[1] << 8;
+    /* FALLTHROUGH */
+    case 1: k1 ^= tail[0];
+            k1 *= c1; k1 = ROTL32(k1,15); k1 *= c2; h1 ^= k1;
+    break;
+    };
 
     //----------
     // finalization
     h1 ^= vDataToHash.size();
-    h1 ^= h1 >> 33;
-    h1 *= 0xff51afd7ed558ccd;
-    h1 ^= h1 >> 33;
-    h1 *= 0xc4ceb9fe1a85ec53;
-    h1 ^= h1 >> 33;
+    h1 ^= h1 >> 16;
+    h1 *= 0x85ebca6b;
+    h1 ^= h1 >> 13;
+    h1 *= 0xc2b2ae35;
+    h1 ^= h1 >> 16;
 
     return h1;
 }
