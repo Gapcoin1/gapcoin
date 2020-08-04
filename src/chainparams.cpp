@@ -32,7 +32,7 @@ using namespace boost::assign;
 /* ip seeds */
 unsigned int pnSeed[] =
 {
-  0x9b8fe3d4, 0x52458368, 0x092cd75f, 0xb324fe9b, 0xc0e27fc7,
+  0xC1E93CB8, 0x8B3B6789, 0x8B3B39AA, 0x6DFC2DAB, 0x258B0FFB, 0x5859278E, 0x5FB3B315, 0x6DFC2DAB,
 };
 
 class CMainParams : public CChainParams {
