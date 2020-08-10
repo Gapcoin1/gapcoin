@@ -168,5 +168,9 @@ For ADD NODES
 
 Cut and paste the included .gapcoin file into your Linux Home Directory.  This is where Gapcoin will create it automatically, but it can be done manually with the added seed nodes already done!
 
+If gapcoin already created, and you need the seed nodes use CTRL H to reveal hidden folders (.gapcoin), then cut and paste the gapcoin.conf file into it.
+
+
+
 
 
