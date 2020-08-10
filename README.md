@@ -63,6 +63,8 @@ sudo apt install db5.3-util libdb5.3++-dev libdb5.3-dev
 
 **git clone https://gitlab.com/Gapcoin/gapcoin.git**
 
+Cut and paste the included .gapcoin file into your Linux Home Directory.
+
 **cd gapcoin**
 
 **git submodule init**
