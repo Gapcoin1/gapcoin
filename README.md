@@ -160,3 +160,11 @@ https://freiexchange.com/market/GAP/BTC
 
 
 
+
+
+For ADD NODES 
+
+Cut and paste the included .gapcoin file into your Linux Home Directory.  This is where Gapcoin will create it automatically, but it can be done manually with the added seed nodes already done!
+
+
+
