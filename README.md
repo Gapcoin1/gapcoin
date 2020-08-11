@@ -66,7 +66,7 @@ sudo apt install db5.3-util libdb5.3++-dev libdb5.3-dev
 Go into gapcoin repository after cloned, CTRL H to view hidden folders, Cut and paste the included 
 .gapcoin file into your Linux Home Directory where gapcoin repository is located.
 
-NOTE .GAPCOIN IS SEPERATE FROM THE GAPCOIN REPOSITORY CODE WHERE GAPCOIN IS BUILT
+NOTE .GAPCOIN IS SEPERATE FROM THE GAPCOIN REPOSITORY CODE WHERE GAPCOIN IS CLONED
 
 **cd gapcoin**
 
