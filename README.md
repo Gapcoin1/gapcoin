@@ -2,6 +2,7 @@ Gapcoin Core integration/staging tree
 =====================================
 
 https://www.gapcoin.org
+https://www.gapcoin.club
 
 Copyright (c) 2009-2014 Bitcoin Core Developers
 <br>
@@ -160,6 +161,8 @@ Type ./gapcoin-cli and all the commands from the QT debug are valid here.  Use .
 
 
 **Prime GAP's can be bought/sold here!**
+
+https://freebitcoins.com/xchange/market/Bitcoin-Gapcoin/     (Recommended)
 
 https://freiexchange.com/market/GAP/BTC
 
