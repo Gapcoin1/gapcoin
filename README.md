@@ -23,9 +23,10 @@ For more information of the Gapcoin Core software, see https://www.gapcoin.org
 **Gapcoin Trisquel 9.0 OS Compiling/Build Instructions**
 
 
-Trisquel 9 Download https://kaspian.kapsi.fi/trisquel/etiona/
+Trisquel 9 Download https://trisquel.info/
 
-Forum Post https://trisquel.info/de/forum/trisquel-9-etiona-0
+https://distrowatch.com/table-mobile.php?distribution=trisquel
+
 
 If using M.2 Hard Drives it is Recommended to use URUK 3.0 Operating System
 
