@@ -1,7 +1,7 @@
-Gapcoin Core integration/staging tree
+**Gapcoin Core integration/staging tree**
 
 
-Current Unique Gapcoin Upgrades
+**Current Unique Gapcoin Upgrades**
 
 Worlds First Crypto-Currency to implement Source Code wide HMAC 512 Bit Keys to prevent Live attacks against Transactions!
 
@@ -9,9 +9,9 @@ Worlds First Bitcoin Clone to adopt a 64 Bit HMAC murmurhash to generate it's Sh
 
 
 
-Gapcoin Version 9 2021-2030 Roadmap
+**Gapcoin Version 9 2021-2030 Roadmap**
 
-(Please Contribute Code to the Roadmap)
+**(Please Contribute Code to the Roadmap)**
 
 
 1)  By 2023 Adopt Lattice SSL 512-571 Bit Private Keys.  
@@ -51,7 +51,7 @@ Gapcoin Version 9 2021-2030 Roadmap
 
 =====================================
 
-https://www.gapcoin.org
+**https://www.gapcoin.org**
 
 
 Copyright (c) 2009-2021 Bitcoin Core Developers
