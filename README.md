@@ -30,9 +30,9 @@ Worlds First Bitcoin Clone to adopt a 64 Bit HMAC murmurhash to generate it's Sh
 
 4)  By the year 2050 authorize a the Ceasar's Gapcoin Cipher.
 
-    (The Gapcoin Ceasar's Cipher will employ a Multi-Shift Block, Multi-COlor Block Programming language for 2 bit smart contracts)
+    (The Gapcoin Ceasar's Cipher will employ a Multi-Shift Block, Multi-COlor Block Programming language for 4096 Bit Multi-Colored Multi-Shift Latticed Circuit smart contracts)
 
-    (Example the miner will submit multiple shifts into 1 block that is calculations for a Star Mapping)
+    (Example the miner will submit multiple shifts with 128 KB Colored Lattice block insert into 1 Gapcoin block that is calculations for a Star Mapping as output, Reproducable from the input generated as a hash on the public blockchain for the Smart Contract either Public or Private both possible Max 128 Contracts per Block) (Low Fee) Smart Contracts)
 
 5)  By Unlimited 
 
