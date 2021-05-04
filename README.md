@@ -1,12 +1,62 @@
 Gapcoin Core integration/staging tree
+
+
+Current Unique Gapcoin Upgrades
+
+Worlds First Crypto-Currency to implement Source Code wide HMAC 512 Bit Keys to prevent Live attacks against Transactions!
+
+Worlds First Bitcoin Clone to adopt a 64 Bit HMAC murmurhash to generate it's Sha-512 512 Bit Keys
+
+
+
+Gapcoin Version 9 2021-2030 Roadmap
+
+(Please Contribute Code to the Roadmap)
+
+
+1)  By 2023 Adopt Lattice SSL 512-571 Bit Private Keys.  
+
+    (Please code and after I verify it works and for bugs it will surely be implemented A.S.A.P.)
+
+    (A lot of it is easy and done already except the refinement and rewriting the C Code to keep the legacy 256 Bit Private Keys)
+
+    (I would like to thank the NSA future coders to hijack older private keys as a Bug Bounty (But don't claim them all at once))
+
+
+2)  By year 2030 Try to adopt a Hard Fork implementing SHA-512 Hash Algo with SHA-512 HMAC with 512 Bit keys along with 512-571 Bit Lattice SSL Private Keys.
+
+
+3)  Develop a In-Wallet GPU Computer Graphics built in wallet miner supporting dual CPU/GPU mining and solo GPU or Solo CPU mining in wallet!
+
+4)  By the year 2050 authorize a the Ceasar's Gapcoin Cipher.
+
+    (The Gapcoin Ceasar's Cipher will employ a Multi-Shift Block, Multi-COlor Block Programming language for 2 bit smart contracts)
+
+    (Example the miner will submit multiple shifts into 1 block that is calculations for a Star Mapping)
+
+5)  By Unlimited 
+
+    (Implement a Hard Fork Authorized upon the Julia Lang Programming Code using all the previous features)
+
+
+6)  Each Authorized Hard Fork will adopt it's own blockchain to increase the adopting of blockchain pruning!
+
+
+7)  The Gapcoin Master Record Version 9 Blockchain will only upgrade along with Trisquel Operating System needs required to compile the Gapcoin Wallet Miner
+
+
+
+
+
+
 =====================================
 
 https://www.gapcoin.org
-https://www.gapcoin.club
 
-Copyright (c) 2009-2014 Bitcoin Core Developers
+
+Copyright (c) 2009-2021 Bitcoin Core Developers
 <br>
-Copyright (c) 2014-2020 The Satoshi Gapcoin Clan Core Developers
+Copyright (c) 2014-2021 The Satoshi Gapcoin Clan Core Developers
 
 **What is Gapcoin?**
 ----------------
@@ -163,9 +213,11 @@ Type ./gapcoin-cli and all the commands from the QT debug are valid here.  Use .
 
 **Prime GAP's can be bought/sold here!**
 
-https://freebitcoins.com/xchange/market/Bitcoin-Gapcoin/     (Recommended)
-
 https://freiexchange.com/market/GAP/BTC
+
+https://freebitcoins.com/xchange/market/Bitcoin-Gapcoin/
+
+
 
 
 
