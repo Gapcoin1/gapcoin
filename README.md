@@ -1,4 +1,4 @@
-**Gapcoin Core integration/staging tree**
+ **Gapcoin Core integration/staging tree**
 
 
 **Current Unique Gapcoin Upgrades**
@@ -6,47 +6,6 @@
 Worlds First Crypto-Currency to implement Source Code wide HMAC 512 Bit Keys to prevent Live attacks against Transactions!
 
 Worlds First Bitcoin Clone to adopt a 64 Bit HMAC murmurhash to generate it's Sha-512 512 Bit Keys
-
-
-
-**Gapcoin Version 9 2021-2030 Roadmap**
-
-**(Please Contribute Code to the Roadmap)**
-
-
-1)  By 2023 Adopt Lattice SSL 512-571 Bit Private Keys.  
-
-    (Please code and after I verify it works and for bugs it will surely be implemented A.S.A.P.)
-
-    (A lot of it is easy and done already except the refinement and rewriting the C Code to keep the legacy 256 Bit Private Keys)
-
-    (I would like to thank the NSA future coders to hijack older private keys as a Bug Bounty (But don't claim them all at once))
-
-
-2)  By year 2030 Try to adopt a Hard Fork implementing SHA-512 Hash Algo with SHA-512 HMAC with 512 Bit keys along with 512-571 Bit Lattice SSL Private Keys.
-
-
-3)  Develop a In-Wallet GPU Computer Graphics built in wallet miner supporting dual CPU/GPU mining and solo GPU or Solo CPU mining in wallet!
-
-4)  By the year 2050 authorize a the Ceasar's Gapcoin Cipher.
-
-    (The Gapcoin Ceasar's Cipher will employ a Multi-Shift Block, Multi-COlor Block Programming language for 4096 Bit Multi-Colored Multi-Shift Latticed Circuit smart contracts)
-
-    (Example the miner will submit multiple shifts with 128 KB Colored Lattice block insert into 1 Gapcoin block that is calculations for a Star Mapping as output, Reproducable from the input generated as a hash on the public blockchain for the Smart Contract either Public or Private both possible Max 128 Contracts per Block) (Low Fee) Smart Contracts)
-
-5)  By Unlimited 
-
-    (Implement a Hard Fork Authorized upon the Julia Lang Programming Code using all the previous features)
-
-
-6)  Each Authorized Hard Fork will adopt it's own blockchain to increase the adopting of blockchain pruning!
-
-
-7)  The Gapcoin Master Record Version 9 Blockchain will only upgrade along with Trisquel Operating System needs required to compile the Gapcoin Wallet Miner
-
-
-
-
 
 
 =====================================
@@ -70,21 +29,16 @@ software which enables the use of this currency.
 For more information of the Gapcoin Core software, see https://www.gapcoin.org
 
 
-**Gapcoin Trisquel 9.0 OS Compiling/Build Instructions**
+**Gapcoin Linux OS Wallet Miner Version 9.3 Compiling/Build Instructions**
 
 
-Trisquel 9 Download https://trisquel.info/
+**List of Linux Free Operating Systems**
 
-https://distrowatch.com/table-mobile.php?distribution=trisquel
+https://distrowatch.com
+
+MX Linux is the RECOMMENDED Operating System at this time
 
 
-If using M.2 Hard Drives it is Recommended to use URUK 3.0 Operating System
-
-https://distrowatch.com/table.php?distribution=uruk
-
-Download
-
-https://sourceforge.net/projects/urukos/files/
 
 **From Linux Command Line Terminal 1 LINE ITEM AT A TIME**
 
@@ -215,8 +169,6 @@ Type ./gapcoin-cli and all the commands from the QT debug are valid here.  Use .
 
 https://freiexchange.com/market/GAP/BTC
 
-https://freebitcoins.com/xchange/market/Bitcoin-Gapcoin/
-
 
 
 
@@ -233,3 +185,37 @@ If gapcoin already created, and you need the seed nodes use CTRL H to reveal hid
 
 
 
+**Gapcoin Version 9 2021-2030 Roadmap**
+
+**(Please Contribute Code to the Roadmap)**
+
+
+1)  By 2023 Adopt Lattice SSL 512-571 Bit Private Keys.  
+
+    (Please code and after I verify it works and for bugs it will surely be implemented A.S.A.P.)
+
+    (A lot of it is easy and done already except the refinement and rewriting the C Code to keep the legacy 256 Bit Private Keys)
+
+    (I would like to thank the NSA future coders to hijack older private keys as a Bug Bounty (But don't claim them all at once))
+
+
+2)  By year 2030 Try to adopt a Hard Fork implementing SHA-512 Hash Algo with SHA-512 HMAC with 512 Bit keys along with 512-571 Bit Lattice SSL Private Keys.
+
+
+3)  Develop a In-Wallet GPU Computer Graphics built in wallet miner supporting dual CPU/GPU mining and solo GPU or Solo CPU mining in wallet!
+
+4)  By the year 2050 authorize a the Ceasar's Gapcoin Cipher.
+
+    (The Gapcoin Ceasar's Cipher will employ a Multi-Shift Block, Multi-COlor Block Programming language for 4096 Bit Multi-Colored Multi-Shift Latticed Circuit smart contracts)
+
+    (Example the miner will submit multiple shifts with 128 KB Colored Lattice block insert into 1 Gapcoin block that is calculations for a Star Mapping as output, Reproducable from the input generated as a hash on the public blockchain for the Smart Contract either Public or Private both possible Max 128 Contracts per Block) (Low Fee) Smart Contracts)
+
+5)  By Unlimited 
+
+    (Implement a Hard Fork Authorized upon the Julia Lang Programming Code using all the previous features)
+
+
+6)  Each Authorized Hard Fork will adopt it's own blockchain to increase the adopting of blockchain pruning!
+
+
+7)  The Gapcoin Master Record Version 9 Blockchain will only upgrade along with Trisquel Operating System needs required to compile the Gapcoin Wallet Miner
