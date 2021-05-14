@@ -42,9 +42,7 @@ MX Linux is the RECOMMENDED Operating System at this time
 
 **From Linux Command Line Terminal 1 LINE ITEM AT A TIME**
 
-**Remove unwanted programs that waste time updating.**
 
-sudo apt remove libreoffice-common icedove orca
 
 **Update the Operating System**
 
@@ -52,6 +50,11 @@ sudo apt update && sudo apt dist-upgrade
 
 
 **Start Gapcoin Install**
+
+Open Terminal
+
+ALT+CTRL T 
+
 
 
 sudo apt-get install git synaptic gdebi pkg-config
@@ -67,9 +70,16 @@ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
 sudo apt install db5.3-util libdb5.3++-dev libdb5.3-dev
 
 
+
+Open New Terminal 
+
+ALT+CTRL T 
+
 **git clone https://gitlab.com/Gapcoin/gapcoin.git**
 
-Go into gapcoin repository after cloned, CTRL H to view hidden folders, Cut and paste the included 
+
+
+Go into gapcoin FILE repository after cloned, CTRL H to view hidden folders, Cut and paste the included 
 .gapcoin file into your Linux Home Directory where gapcoin repository is located.
 
 NOTE .GAPCOIN IS SEPERATE FROM THE GAPCOIN REPOSITORY CODE WHERE GAPCOIN IS CLONED
