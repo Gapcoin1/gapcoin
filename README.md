@@ -29,18 +29,25 @@ software which enables the use of this currency.
 For more information of the Gapcoin Core software, see https://www.gapcoin.org
 
 
+
+
 **Gapcoin Linux OS Wallet Miner Version 9.3 Compiling/Build Instructions**
+
 
 
 **List of Linux Free Operating Systems**
 
 https://distrowatch.com
 
-MX Linux is the RECOMMENDED Operating System at this time
+_**MX-Linux**_ is the RECOMMENDED Operating System at this time
+
+
 
 
 
 **From Linux Command Line Terminal 1 LINE ITEM AT A TIME**
+
+
 
 
 
@@ -51,7 +58,7 @@ sudo apt update && sudo apt dist-upgrade
 
 **Start Gapcoin Install**
 
-Open Terminal
+**Open Terminal**
 
 ALT+CTRL T 
 
@@ -71,7 +78,7 @@ sudo apt install db5.3-util libdb5.3++-dev libdb5.3-dev
 
 
 
-Open New Terminal 
+**Open New Terminal **
 
 ALT+CTRL T 
 
@@ -105,7 +112,7 @@ NOTE .GAPCOIN IS SEPERATE FROM THE GAPCOIN REPOSITORY CODE WHERE GAPCOIN IS CLON
 **How to start the QT wallet after compiling!**
 
 
-Open Command Line Terminal
+**Open Command Line Terminal**
 
 cd gapcoin/src/qt
 
