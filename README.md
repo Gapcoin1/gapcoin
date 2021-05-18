@@ -39,7 +39,8 @@ For more information of the Gapcoin Core software, see https://www.gapcoin.org
 
 https://distrowatch.com
 
-_**MX-Linux**_ is the RECOMMENDED Operating System at this time
+
+_**MX-Linux**_ and **Trisquel OS** are the RECOMMENDED Operating Systems
 
 
 
