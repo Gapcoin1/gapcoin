@@ -90,7 +90,7 @@ ALT+CTRL T
 Go into gapcoin FILE repository after cloned, CTRL H to view hidden folders, Cut and paste the included 
 .gapcoin file into your Linux Home Directory where gapcoin repository is located.
 
-NOTE .GAPCOIN IS SEPERATE FROM THE GAPCOIN REPOSITORY CODE WHERE GAPCOIN IS CLONED
+NOTE .GAPCOIN IS WHERE THE BLOCKCHAIN AND WALLET ARE LOCATED WITH GAPCOIN.CONF FILE
 
 **cd gapcoin**
 
@@ -104,10 +104,15 @@ NOTE .GAPCOIN IS SEPERATE FROM THE GAPCOIN REPOSITORY CODE WHERE GAPCOIN IS CLON
 
 **make**
 
+**make install** 
 
 
 
+**How to start the QT wallet after compiling AND installing!**
+ 
+ **Open Command Line Terminal**
 
+ ./gapcoin-qt
 
 
 **How to start the QT wallet after compiling!**
@@ -124,6 +129,8 @@ To Run the Daemon
 cd gapcoin/src
 
 ./gapcoind
+
+
 
 It will auto generate RPCUsername and RPCPassword which will be REQUIRED to copy paste into gapcoin.conf file YOU NEED TO MAKE inside .gapcoin folder after you make .gapcoin or it will make itself after first wallet launch.  Blockchain, and wallet are stored in .gapcoin!
 
