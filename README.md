@@ -112,7 +112,7 @@ NOTE .GAPCOIN IS WHERE THE BLOCKCHAIN AND WALLET ARE LOCATED WITH GAPCOIN.CONF F
  
  **Open Command Line Terminal**
 
- ./gapcoin-qt
+ gapcoin-qt
 
 
 **How to start the QT wallet after compiling!**
