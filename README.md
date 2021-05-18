@@ -132,9 +132,7 @@ cd gapcoin/src
 
 
 
-It will auto generate RPCUsername and RPCPassword which will be REQUIRED to copy paste into gapcoin.conf file YOU NEED TO MAKE inside .gapcoin folder after you make .gapcoin or it will make itself after first wallet launch.  Blockchain, and wallet are stored in .gapcoin!
-
-In Linux to view .gapcoin folders with the . you need to go your home folder and click **CTRL H** to show the hiddin files.  That is where .gapcoin is stored.
+In Linux to view .gapcoin folders with the . you need to go your Linux OS **Home folder** and click **CTRL H** to show the hidden files.  That is where .gapcoin is stored and any other Blockchains for Linux!
 
 
 
@@ -194,9 +192,19 @@ Type ./gapcoin-cli and all the commands from the QT debug are valid here.  Use .
 
 https://freiexchange.com/market/GAP/BTC
 
+https://www.unnamed.exchange/Exchange/Basic?market=GAP_BTC
+
+https://freebitcoins.com/xchange/market/Bitcoin-Gapcoin
 
 
+**GAPCOINS BLOCK EXPLOERER**
 
+https://chainz.cryptoid.info/gap/
+
+
+**GAPCOIN BITCOINTALK FORUM "ANN"**
+
+https://bitcointalk.org/index.php?topic=822498.0
 
 
 
