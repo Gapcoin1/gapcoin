@@ -104,7 +104,7 @@ NOTE .GAPCOIN IS WHERE THE BLOCKCHAIN AND WALLET ARE LOCATED WITH GAPCOIN.CONF F
 
 **make**
 
-**make install** 
+**sudo make install** 
 
 
 
