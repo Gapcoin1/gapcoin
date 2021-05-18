@@ -79,7 +79,7 @@ sudo apt install db5.3-util libdb5.3++-dev libdb5.3-dev
 
 
 
-**Open New Terminal **
+**Open New Terminal**
 
 ALT+CTRL T 
 
