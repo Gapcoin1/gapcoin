@@ -13,9 +13,9 @@ Worlds First Bitcoin Clone to adopt a 64 Bit HMAC murmurhash to generate it's Sh
 **https://www.gapcoin.org**
 
 
-Copyright (c) 2009-2021 Bitcoin Core Developers
+Copyright (c) 2009-2022 Bitcoin Core Developers
 <br>
-Copyright (c) 2014-2021 The Satoshi Gapcoin Clan Core Developers
+Copyright (c) 2014-2022 The Satoshi Gapcoin Clan Core Developers
 
 **What is Gapcoin?**
 ----------------
@@ -40,7 +40,7 @@ For more information of the Gapcoin Core software, see https://www.gapcoin.org
 https://distrowatch.com
 
 
-_**MX-Linux**_ and **Trisquel OS** are the RECOMMENDED Operating Systems
+**Trisquel OS** is the RECOMMENDED Operating System
 
 
 
@@ -83,7 +83,7 @@ sudo apt install db5.3-util libdb5.3++-dev libdb5.3-dev
 
 ALT+CTRL T 
 
-**git clone https://gitlab.com/Gapcoin/gapcoin.git**
+**git clone https://github.com/Gapcoin1/gapcoin.git**
 
 
 
