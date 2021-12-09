@@ -43,6 +43,9 @@ https://distrowatch.com
 **Trisquel OS** is the RECOMMENDED Operating System
 
 
+https://trisquel.info
+
+
 
 
 
